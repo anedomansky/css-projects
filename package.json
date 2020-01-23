@@ -1,0 +1,23 @@
+{
+  "name": "css-projects",
+  "version": "1.0.0",
+  "description": "Learning SCSS/CSS",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch scss/acme-web-design -o css/acme-web-design"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anedomansky/css-projects.git"
+  },
+  "keywords": [],
+  "author": "Alexander Nedomansky <anedomansky@googlemail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anedomansky/css-projects/issues"
+  },
+  "homepage": "https://github.com/anedomansky/css-projects#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
