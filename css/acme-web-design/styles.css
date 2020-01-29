@@ -8,22 +8,27 @@ body {
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(5, minmax(100px, 1fr));
-  grid-auto-rows: minmax(150px, auto);
+  grid-template-rows: minmax(0, 1fr) 1fr 1fr 1fr 1fr;
   grid-template-areas: "header header header header header" "main main main main main" "main main main main main" "main main main main main" "main main main main main"; }
 
 header {
   grid-area: header;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto; }
+  grid-auto-rows: auto;
+  background-color: #35424a;
+  border-bottom: 3px solid #e8491d; }
   header .page-heading {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     align-self: center;
-    justify-self: center; }
+    justify-self: center;
+    color: white; }
+    header .page-heading span {
+      color: #e8491d; }
   header .page-navigation {
     grid-column-start: 4;
-    grid-column-end: 4;
+    grid-column-end: 5;
     align-self: center;
     justify-self: center; }
     header .page-navigation ul {
@@ -31,8 +36,29 @@ header {
       margin: 0; }
     header .page-navigation li {
       display: inline-block;
-      padding-right: 1rem;
+      padding-right: 1.5rem;
       text-transform: uppercase; }
+      header .page-navigation li a {
+        color: white;
+        text-decoration: none; }
+      header .page-navigation li a:visited, header .page-navigation li a:hover {
+        color: #e8491d; }
 
 main {
-  grid-area: main; }
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; }
+  main .banner {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    background: url("../../assets/images/mansion-in-the-canyon.jpg") no-repeat; }
+    main .banner .banner__text {
+      text-align: center;
+      color: white;
+      font-size: 2rem; }
+  main .newsletter {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    display: flex; }
