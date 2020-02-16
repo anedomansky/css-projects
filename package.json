@@ -4,7 +4,7 @@
   "description": "Learning SCSS/CSS",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --watch scss/traversy-media -o css/traversy-media"
+    "scss": "node-sass --watch scss/my-tunes -o css/my-tunes"
   },
   "repository": {
     "type": "git",
