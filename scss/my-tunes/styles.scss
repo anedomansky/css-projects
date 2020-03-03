@@ -101,6 +101,7 @@ main {
             font-size: 1.25rem;
             padding: 0.25rem;
             border-radius: 0.25rem;
+            cursor: pointer;
         }
 
         & .music__tablet {
@@ -126,6 +127,7 @@ main {
             font-size: 1.25rem;
             padding: 0.25rem;
             border-radius: 0.25rem;
+            cursor: pointer;
         }
 
         & img {
@@ -161,6 +163,10 @@ main {
         display: flex;
         padding: 1rem;
 
+        & .gift-cards__image {
+            height: 200px;
+        }
+
         & .gift-cards__text {
             padding: 0 1rem;
 
@@ -177,6 +183,7 @@ footer {
     justify-content: center;
     background-color: #333333;
     color: #eeeeee;
+    padding-bottom: 1rem;
 
     & div {
         margin: 0 1rem;
@@ -190,5 +197,62 @@ footer {
                 line-height: 150%;
             }
         }
+    }
+}
+
+@media all and (max-width: 580px) {
+    header {
+        & .navigation ul {
+            margin: 0;
+            padding: 0;
+    
+            & li:first-of-type {
+                display: inline-block;
+                padding: 0 1rem;
+            }
+    
+            & li {
+                display: inline-block;
+                padding-right: 1rem;
+            }
+        }
+    }
+    main {
+        & #banner .banner__text {
+            top: 25%;
+            left: 0;
+            transform: translate(0, -10%);
+
+            & p {
+                display: none;
+            }
+        }
+
+        & #separator .separator__text {
+            top: 15%;
+            left: 0;
+            transform: translate(0, -5%);
+
+            & p {
+                display: none;
+            }
+        }
+
+        & #gift-cards {
+            grid-area: gifts;
+            display: flex;
+            flex-direction: column;
+
+            & .gift-cards__image {
+                height: 150px;
+            }
+        }
+    }
+
+    footer {
+        grid-area: footer;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 }
