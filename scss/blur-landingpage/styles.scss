@@ -47,6 +47,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
 
         & img {
             filter: invert(1);
@@ -65,6 +66,10 @@ main {
         display: flex;
         justify-content: space-evenly;
         text-align: center;
+
+        & div {
+            cursor: pointer;
+        }
 
         & img {
             filter: invert(1);
@@ -95,4 +100,21 @@ footer {
     grid-area: footer;
     display: flex;
     justify-content: center;
+}
+
+@media all and (max-width: 580px) {
+    & .categories {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    & .about {
+        background-color: #ffffff;
+        color: #000000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
