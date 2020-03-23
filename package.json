@@ -4,7 +4,7 @@
   "description": "Learning SCSS/CSS",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --watch scss/blur-landingpage -o css/blur-landingpage"
+    "scss": "node-sass --watch scss/acme-photography -o css/acme-photography"
   },
   "repository": {
     "type": "git",
